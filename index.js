@@ -17,7 +17,7 @@ const upload = multer({
 const serviceAccount = require('./serviceAccountKey.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  storageBucket: 'migrant-health-d51de.firebaseapp.com'
+  storageBucket: 'your firebase bucket'
 });
 
 const db = admin.firestore();
